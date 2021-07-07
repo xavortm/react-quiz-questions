@@ -1,0 +1,23 @@
+{
+  "language": "javascript",
+  "domain": "react",
+  "questions": [
+    {
+      "id": 0,
+      "question": "`componentDidMount()` is better for fetching data than `componentWillMount()`.",
+      "topic": "Fetching",
+      "answers": [
+        {
+          "correct": true,
+          "content": "True"
+        },
+        {
+          "correct": false,
+          "content": "False"
+        }
+      ],
+      "source": "https://blog.logrocket.com/patterns-for-data-fetching-in-react-981ced7e5c56/",
+      "information": "Some people may argue that it’s better to use componentWillMount(), which is called when the component is about to be mounted and starts data fetching earlier to save time. There are two important reasons against it, however. First, it’s **deprecated** as of React 17. Second, when you use the Fetch API or Axios in componentWillMount(), React will render without waiting for it to finish, which will cause an empty render for the first time  —  so you don’t really save any time."
+    }
+  ]
+}
